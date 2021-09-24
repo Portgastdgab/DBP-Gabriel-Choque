@@ -1,0 +1,39 @@
+.data{
+    border-top: 5px #14466C solid;
+}
+.grid {
+    background-color: gray;
+    display: grid;
+    padding: 5px;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    grid-template-columns: 30% auto;
+    grid-template-rows: auto;
+    margin: 3%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.grid-item {
+    font-size: 20px;
+    text-align: left;
+}
+
+#information, #record{
+    border: 40px white solid; padding-top: 0px; border-top: 3px #14466C solid;
+}
+
+#left{
+    padding: 20px;
+    padding-top: 0px;
+    background-color: #CBDFE3;
+}
+
+#right{
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+
+}
