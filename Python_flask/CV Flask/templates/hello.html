@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Curriculum</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+  </head>
+  <body>
+    <div class="grid">
+        <div id = "left" class="grid-item">
+
+            <img src="{{ url_for('static',filename='image.jpg') }}" alt="cat" width = "90%" style="padding: 5%;">
+
+            <div class = "data">
+                <ul>
+                    <h2>CONTACTO</h2>
+                    <li>{{direction}} - {{district}} {{postalcode}}</li>
+                    <li>{{city}}</a></li>
+                    <li>925456135</li>    
+                    <li>{{email}}</li>
+                    <li>{{birthday}}</li>
+                    <li>{{nacionality}}</li>
+                    <li>DNI: {{dni}}</a></li>
+                    <li>{{status}}</li>
+                  </ul>
+            </div>
+
+            <div class = "data">
+                <ul>
+                    <h2>APTITUDES</h2>
+                    <li>{{aptitude1}}</li>
+                    <li>{{aptitude2}}</li>
+                    <li>{{aptitude3}}</li>
+                    <li>{{aptitude4}}</li>
+                </ul>
+            </div>
+
+            <div class = "data">
+                <ul>
+                    <h2>DIPLOMAS</h2>
+                    <li>{{diploma1}}</li>
+                    <li>{{diploma2}}</li>
+                    <li>{{diploma3}}</li>
+                    <li>{{diploma4}}</li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div id = "right" class="grid-item">
+            <div id = "profile" style="background-color: #14466C; border: 40px #14466C solid; color: white;">
+        
+                <h1 style = "border-bottom: 5px white solid;">{{name}} {{lastname}}</h1>
+                {{resume}}
+            </div>
+            <div style = "padding-top: 15px">
+
+            </div>
+            <div id = "information">
+                <h2>FORMACIÓN</h2>
+                <b>{{fieldstudy}} ({{grade}}) :</b> {{aditionalinformation}} <br>
+                <b>{{namecentereducation}}</b> - {{locationcentereducation}}
+            </div>
+
+            <div id = "record">
+                <h2>HISTORIAL LABORAL</h2>
+                <h3>{{job}}</h3>
+                <h4>{{employer}}, {{workcity}}</h4>
+                <p>{{functions}}</p>
+            </div>
+        </div>
+        
+    </div>      
+    
+    
+  </body>
+</html>
