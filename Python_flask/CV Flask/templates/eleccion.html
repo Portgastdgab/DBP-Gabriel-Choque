@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Curriculum</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='eleccion.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+</head>
+
+  <body>
+    <div class="container bootstrap snippets bootdey">
+        <div class="row">
+            <div class="well">
+                <h1 class="text-center text-primary">
+                    <b>Elige el modelo de tu curriculum</b>
+                </h1>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <div class="col-md-3">
+                            <img src="{{ url_for('static',filename='modelo1.jpg') }}" alt="cat" margin = "10%" width = "40%" style="padding: 5%;">
+                            <div class="media col-md-12">
+                                <a href="{{ url_for('index1') }}"><input type="button" value="Modelo1" class="login100-form-btn"></a>
+                                <div class="stars text-center text-warning">
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3">
+                            <img src="{{ url_for('static',filename='modelo2.jpg') }}" alt="cat" margin = "10%" width = "40%" style="padding: 5%;">
+                            <div class="media col-md-12">
+                                <a href="{{ url_for('index2') }}"><input type="button" value="Modelo 2" class="login100-form-btn"></a>
+                                <div class="stars text-center text-warning">
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

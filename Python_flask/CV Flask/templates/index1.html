@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <style type="text/css"> BODY{ font-family: 'Times New Roman', Times, serif; } </style>
+    </head>
+    <body>
+        <div class="container" style="padding-top: 40px;">
+            <div class="row">
+                <div class="col">
+                    <div id="list-example" class="list-group">
+                        <a class="list-group-item list-group-item-action" href="#list-item-1">Encabezado</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-2">Experiencia</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-3">Formación</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-4">Aptitudes</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-5">Diplomas</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-6">Resumen</a>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <form action="{{ url_for('hello') }}" method="post">
+                    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+                        <h4 id="list-item-1">
+                            <div class="container" style="border: 50px #14466C solid;">
+                                <div style="background-color: #1B1054">
+                                    <h1 style="color: #CCFCFD;"><b>ENCABEZADO</b></h1>
+                                    <h3 style="color: lavender;">Vamos a empezar con el encabezado</h3>
+                                </div>
+                                    <div class="mb-3">
+                                        <label for="disabledTextInput" class="form-label">NOMBRES</label>
+                                        <input type="text" name="name" id="disabledTextInput" class="form-control" placeholder="Santiago">
+                    
+                                        <label for="disabledTextInput" class="form-label">APELLIDOS</label>
+                                        <input type="text" name="lastname" id="disabledTextInput" class="form-control" placeholder="Flores">
+                    
+                                        <label for="disabledTextInput" class="form-label">FECHA DE NACIMIENTO</label>
+                                        <input type="text" name="birthday" id="disabledTextInput" class="form-control" placeholder="01/01/2000">
+                    
+                                        <label for="disabledTextInput" class="form-label">NACIONALIDAD</label>
+                                        <input type="text" name="nacionality" id="disabledTextInput" class="form-control" placeholder="Peruano">
+                    
+                                        <label for="disabledTextInput" class="form-label">DNI</label>
+                                        <input type="text" name="dni" id="disabledTextInput" class="form-control" placeholder="87654321">
+                                        
+                                        <label for="disabledSelect" class="form-label">ESTADO CIVIL</label>
+                                        <select name="status" id="disabledSelect" class="form-select">
+                                            <option>Casado(a)</option>
+                                            <option>Conviviente</option>
+                                            <option>Anulado(a)</option>
+                                            <option>Separado(a)</option>
+                                            <option>Viudo(a)</option>
+                                            <option>Soltero(a)</option>
+                                        </select>
+                                                        
+                                        <label for="disabledTextInput" class="form-label">CIUDAD</label>
+                                        <input type="text" name="city" id="disabledTextInput" class="form-control" placeholder="Lima">
+                    
+                                        <label for="disabledTextInput" class="form-label">DISTRITO</label>
+                                        <input type="text" name="district" id="disabledTextInput" class="form-control" placeholder="Miraflores">
+                    
+                                        <label for="disabledTextInput" class="form-label">DIRECCIÓN</label>
+                                        <input type="text" name="direction" id="disabledTextInput" class="form-control" placeholder="Mercaderes 201">
+                    
+                                        <label for="disabledTextInput" class="form-label">CÓDIGO POSTAL</label>
+                                        <input type="text" name="postalcode" id="disabledTextInput" class="form-control" placeholder="04001">
+                                        
+                                        <label for="disabledTextInput" class="form-label">TELÉFONO</label>
+                                        <input type="text" name="phone" id="disabledTextInput" class="form-control" placeholder="987 654 321">
+                    
+                                        <label for="disabledTextInput" class="form-label">CORREO ELECTRÓNICO</label>
+                                        <input type="text" name="email" id="disabledTextInput" class="form-control" placeholder="santiagof@gmail.com">
+                                    </div>
+                                </div>
+                            </div> 
+                        </h4>
+                    </div>
+                        <h4 id="list-item-2">
+                            <div class="container" style="border: 50px #14466C solid;">
+                                <div style="background-color: #1B1054">
+                                    <h1 style="color: #CCFCFD;">EXPERIENCIA</h1>
+                                    <h3 style="color: lavender;">Ahora nos centraremos en tu experiencia</h3>
+                                </div>                                    
+                                    <div class="mb-3">
+                                        <label for="disabledTextInput" class="form-label">PUESTO DE TRABAJO</label>
+                                        <input type="text" name="job" id="disabledTextInput" class="form-control" placeholder="Desarrollador web">
+                    
+                                        <label for="disabledTextInput" class="form-label">EMPLEADOR</label>
+                                        <input type="text" name="employer" id="disabledTextInput" class="form-control" placeholder="NeoAttack">
+                    
+                                        <label for="disabledTextInput" class="form-label">CIUDAD</label>
+                                        <input type="text" name="workcity" id="disabledTextInput" class="form-control" placeholder="Lima">
+                    
+                                        <label for="disabledTextInput" class="form-label">FECHA DE INICIO</label>
+                                        <input type="text" name="start" id="disabledTextInput" class="form-control" placeholder="01/01/2020">
+                    
+                                        <label for="disabledTextInput" class="form-label">FECHA DE FINALIZACIÓN</label>
+                                        <input type="text" name="end" id="disabledTextInput" class="form-control" placeholder="Hasta la actualidad o (dd/mm/aa)">
+
+                                        <label for="disabledTextInput" class="form-label">FUNCIONES QUE DESEMPEÑASTE</label>
+                                        <input type="text" name="functions" id="disabledTextInput" class="form-control" placeholder="Ejm: Enseñanza de [Materia] a estudiantes [Nivel de estudiante].">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </h4>
+                        <h4 id="list-item-3">
+                            <div class="container" style="border: 50px #14466C solid;">
+                                <div style="background-color: #1B1054">
+                                    <h1 style="color: #CCFCFD;">FORMACION</h1>
+                                    <h3 style="color: lavender;">Háblanos de los centros educativos, los programas de desarrollo profesional o los cursos de formación a los que hayas asistido. Aunque no los hayas terminado, es importante que los incluyas.</h3>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="disabledTextInput" class="form-label">NOMBRE DEL CENTRO EDUCATIVO</label>
+                                    <input type="text" name="namecentereducation" id="disabledTextInput" class="form-control" placeholder="Universidad Catolica San Pablo">
+                
+                                    <label for="disabledTextInput" class="form-label">UBICACION DEL CENTRO EDUCATIVO</label>
+                                    <input type="text" name="locationcentereducation" id="disabledTextInput" class="form-control" placeholder="Arequipa, Perú">
+                
+                                    <label for="disabledTextInput" class="form-label">GRADO</label>
+                                    <input type="text" name="grade" id="disabledTextInput" class="form-control" placeholder="Estudiante">
+                
+                                    <label for="disabledTextInput" class="form-label">CAMPO DE ESTUDIO</label>
+                                    <input type="text" name="fieldstudy" id="disabledTextInput" class="form-control" placeholder="Ciencias de la Computación">   
+                                    
+                                    <label for="disabledTextInput" class="form-label">INFORMACION ADICIONAL</label>
+                                    <input type="text" name="aditionalinformation" id="disabledTextInput" class="form-control" placeholder="Utilización de información y algoritmos para la resolución de problemas informáticos">   
+                                </div>
+                            </div>
+                        </h4>
+
+                        <h4 id="list-item-4">
+                            <div class="container" style="border: 50px #14466C solid;">
+                                <div style="background-color: #1B1054">
+                                    <h1 style="color: #CCFCFD;">APTITUDES</h1>
+                                    <h3 style="color: lavender;">Vamos a seleccionar tus aptitudes principales</h3>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="disabledTextInput" class="form-label">APTITUD 1</label>
+                                    <input type="text" name="aptitude1" id="disabledTextInput" class="form-control" placeholder="Habilidades matemáticas">
+                
+                                    <label for="disabledTextInput" class="form-label">APTITUD 2</label>
+                                    <input type="text" name="aptitude2" id="disabledTextInput" class="form-control" placeholder="Organización y planificación">
+                
+                                    <label for="disabledTextInput" class="form-label">APTITUD 3</label>
+                                    <input type="text" name="aptitude3" id="disabledTextInput" class="form-control" placeholder="Atención al cliente">
+                
+                                    <label for="disabledTextInput" class="form-label">APTITUD 4</label>
+                                    <input type="text" name="aptitude4" id="disabledTextInput" class="form-control" placeholder="Venta cruzada">   
+                                </div>
+                            </div>
+                        </h4>
+                        <h4 id="list-item-5">
+                            <div class="container" style="border: 50px #14466C solid;">
+                                <div style="background-color: #1B1054">
+                                    <h1 style="color: #CCFCFD;">DIPLOMAS</h1>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="disabledTextInput" class="form-label">DIPLOMA 1</label>
+                                    <input type="text" name="diploma1" id="disabledTextInput" class="form-control" placeholder="Primer puesto en...">
+                
+                                    <label for="disabledTextInput" class="form-label">DIPLOMA 2</label>
+                                    <input type="text" name="diploma2" id="disabledTextInput" class="form-control" placeholder="Por la participación en...">
+                
+                                    <label for="disabledTextInput" class="form-label">DIPLOMA 3</label>
+                                    <input type="text" name="diploma3" id="disabledTextInput" class="form-control" placeholder="Por terminar el curso de...">
+                
+                                    <label for="disabledTextInput" class="form-label">DIPLOMA 4</label>
+                                    <input type="text" name="diploma4" id="disabledTextInput" class="form-control" placeholder="Diploma de Honor por...">   
+                                </div>
+                            </div>
+                        </h4>
+                        <h4 id="list-item-6">
+                            <div class="container" style="border: 50px #14466C solid;">
+                                <div style="background-color: #1B1054">
+                                    <h1 style="color: #CCFCFD;">RESUMEN</h1>
+                                    <h3 style="color: lavender;">Tu resumen proporciona a los empleadores una idea clara de quién eres, qué puedes aportar y cuáles son tus objetivos.</h3>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="disabledTextInput" class="form-label">INTRODUCE UNA DESCRIPCION TUYA</label>
+                                    <input type="text" name="resume" id="disabledTextInput" class="form-control" placeholder="[Profesión] con más de [Número] años de experiencia en el sector [Tipo]. Con excelentes dotes de liderazgo y resultados contrastables en la gestión de equipos en empleos anteriores. A lo largo de mi carrera he destacado por mi capacidad para encontrar oportunidades de negocio, optimizar procesos y maximizar la rentabilidad.">
+                                </div>
+                            </div>
+                        </h4>
+            
+                    </div>
+                       <button type="submit" class="btn btn-primary" style="margin-left: 45%; margin-bottom: 50px;">Enviar</button>
+                    </form>
+                
+            </div>
+        </div>       
+    </body>
+</html>
